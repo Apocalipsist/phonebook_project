@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<div class="h-auto w-auto position-absolute top-50 start-50 translate-middle ">
+    <h4>Your personal phone book</h4>
+    {% for c in contact %}
+    {% c.id %}{% c.first_name %}{% c.last_name %}
+    <br>{% c.home_address %}<br>{% c.phone_number %}
+    {% endfor %}
+    </form>
+</div>
+
+{% endblock %}
